@@ -1,8 +1,8 @@
 // 簡易版二分探索
-auto isOK = [](int mid, int key) {
+auto isOK = [&](int mid, int key) {
   return mid > key;  // for now
 };
-auto binary_search = [](int key) {
+auto binary_search = [&](int key) {
   int ng = -1;
   int ok = INF;
   while (abs(ok - ng) > 1) {
